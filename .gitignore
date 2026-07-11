@@ -1,0 +1,20 @@
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.zwc
+*.vsix
+
+# Omarchy theme binaries (wallpapers, previews, assets)
+**/themes/*/backgrounds/
+**/themes/*/*.png
+**/themes/*/*.jpg
+**/themes/*/*.webp
+**/current/theme/backgrounds/
+**/current/theme/preview*.png
+**/current/theme/unlock.png
+**/assets/
+**/theme.png
+**/theme2.png
+**/theme3.png
