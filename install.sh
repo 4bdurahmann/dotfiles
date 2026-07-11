@@ -31,7 +31,7 @@ if [ $# -eq 0 ]; then
   echo ""
   echo "Usage: $0 <package...>"
   echo "  Install all:  $0 ${PACKAGES[*]}"
-  echo "  Selectively:  $0 hypr waybar kitty"
+  echo "  Selectively:  $0 hypr waybar shell"
   exit 0
 fi
 
