@@ -1,0 +1,96 @@
+diff --git i/bin/omarchy-toggle-nightlight w/bin/omarchy-toggle-nightlight
+index c308b757..99e48511 100755
+--- i/bin/omarchy-toggle-nightlight
++++ w/bin/omarchy-toggle-nightlight
+@@ -3,7 +3,7 @@
+ # omarchy:summary=Toggle nightlight screen temperature
+ # omarchy:examples=omarchy toggle nightlight
+ 
+-ON_TEMP=4000
++ON_TEMP=5500
+ OFF_TEMP=6000
+ 
+ # Ensure hyprsunset is running
+diff --git i/default/mako/core.ini w/default/mako/core.ini
+index d8837b92..401bd2f6 100644
+--- i/default/mako/core.ini
++++ w/default/mako/core.ini
+@@ -5,8 +5,9 @@ width=420
+ outer-margin=20
+ padding=10,15
+ border-size=2
++border-radius=12
+ max-icon-size=32
+-font=sans-serif 14px
++font=Noto Sans Arabic 14px
+ 
+ [app-name=Spotify]
+ invisible=1
+diff --git i/default/walker/themes/omarchy-default/style.css w/default/walker/themes/omarchy-default/style.css
+index 81ff4e00..d7eb7e3f 100644
+--- i/default/walker/themes/omarchy-default/style.css
++++ w/default/walker/themes/omarchy-default/style.css
+@@ -25,7 +25,8 @@ scrollbar {
+ .box-wrapper {
+   background: alpha(@base, 0.95);
+   padding: 20px;
+-  border: 2px solid @border;
++  border: 1px solid @border;
++  border-radius: 12px;
+ }
+ 
+ .preview-box {
+@@ -35,8 +36,11 @@ scrollbar {
+ }
+ 
+ .search-container {
+-  background: @base;
++  /* background: @base; */
++  background: alpha(@text, 0.07);
+   padding: 10px;
++  /* border: 1px solid @border; */
++  border-radius: 12px;
+ }
+ 
+ .input placeholder {
+@@ -79,7 +83,8 @@ child:selected .item-box * {
+ }
+ 
+ child:selected {
+-  background: alpha(@text, 0.07);
++  /* background: alpha(@text, 0.07); */
++  border-radius: 12px;
+ }
+ 
+ .item-box {
+diff --git i/themes/gruvbox/colors.toml w/themes/gruvbox/colors.toml
+index 57847f0a..8e305f23 100644
+--- i/themes/gruvbox/colors.toml
++++ w/themes/gruvbox/colors.toml
+@@ -1,4 +1,5 @@
+-accent = "#7daea3"
++# accent = "#7daea3"
++accent = "#98971a"
+ cursor = "#bdae93"
+ foreground = "#d4be98"
+ background = "#282828"
+@@ -9,7 +10,8 @@ color0 = "#3c3836"
+ color1 = "#ea6962"
+ color2 = "#a9b665"
+ color3 = "#d8a657"
+-color4 = "#7daea3"
++# color4 = "#7daea3"
++color4 = "#98971a"
+ color5 = "#d3869b"
+ color6 = "#89b482"
+ color7 = "#d4be98"
+@@ -17,7 +19,8 @@ color8 = "#3c3836"
+ color9 = "#ea6962"
+ color10 = "#a9b665"
+ color11 = "#d8a657"
+-color12 = "#7daea3"
++# color12 = "#7daea3"
++color12 = "#98971a"
+ color13 = "#d3869b"
+ color14 = "#89b482"
+ color15 = "#d4be98"
